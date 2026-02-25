@@ -54,5 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const select = document.getElementById('state');
+
+    // Add placeholder option
+    const placeholder = new Option('Select State', '');
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    select.add(placeholder);
+
+    // Add the states
     states.forEach(s => select.add(new Option(s.name, s.code)));
 });

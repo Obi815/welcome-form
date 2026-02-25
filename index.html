@@ -18,12 +18,14 @@
     <!-- Card 2: Name and Email -->
     <div class="card" id="card2">
         <h2>Basic Info</h2>
-        <input type="text" placeholder="Enter Full Name" id="name">
+        <input type="text" placeholder="Enter Name" id="name">
         <input type="email" placeholder="Enter Email" id="email">
+        <input type="number" placeholder="Enter Phone Number" id="phone">
+        <input type="date" placeholder="Enter Year of Birth" id="yearOfBirth">
         <button class="next">Next</button>
     </div>
 
-    <!-- Address  -->
+    <!-- Address Card-->
      <div class="card" id="card3">
         <h2>Address Info</h2>
         <input type="text" placeholder="Address" id="address">
@@ -32,12 +34,29 @@
         <!-- States drop down menu -->
         <div class="dropdown">
             <select id="state">
-
-                <!-- Add more states as needed -->
+                <!-- In main Js file -->
             </select>
         </div>
         <input type="text" placeholder="Zip Code" id="zip">
      </div>
+
+     <!-- Spouse Card -->
+      <div class="card" id="card4">
+        <h2>Are you married?</h2>
+        <div class="radio-buttons">
+            <button class="yes" value="yes">Yes</button>
+            <button class="no" value="no">No</button>
+        </div>
+
+        <div id="spouse-info" >
+            <!-- PUT IN TAG -> style="display: none;" -->
+            <input type="text" placeholder="Spouse's Name" id="spouse-name">
+            <input type="text" placeholder="Spouse's Phone Number" id="spouse-phone">
+            <input type="email" placeholder="Spouse's Email" id="spouse-email">
+            <input type="date" placeholder="Spouse's Birth Date" id="spouse-birth-date">
+            <input type="date" placeholder="Wedding Anniversary" id="wedding-anniversary">
+        </div>
+      </div>
 
 
     
