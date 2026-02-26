@@ -27,7 +27,7 @@
 
     <!-- Address Card-->
      <div class="card" id="card3">
-        <h2>Address Info</h2>
+        <h2>Address Info 🏡</h2>
         <input type="text" placeholder="Address" id="address">
         <input type="text" placeholder="City" id="city">
 
@@ -42,7 +42,7 @@
 
      <!-- Spouse Card -->
       <div class="card" id="card4">
-        <h2>Are you married?</h2>
+        <h2>Are you married? 💍</h2>
         <div class="married-buttons">
             <button class="yes" value="yes">Yes</button>
             <button class="no" value="no">No</button>
@@ -50,6 +50,7 @@
 
         <div id="spouse-info">
             <!-- PUT IN TAG -> style="display: none;" -->
+            <h3>Enter Spouse's Information</h3>
             <input type="text" placeholder="Spouse's Name" id="spouse-name">
             <input type="text" placeholder="Spouse's Phone Number" id="spouse-phone">
             <input type="email" placeholder="Spouse's Email" id="spouse-email">
@@ -60,7 +61,7 @@
         </div>
       </div>
       <div class="card" id="card5">
-        <h2>Do you have children?</h2>
+        <h2>Do you have children? 🧒🏾</h2>
         <div class="radioBtns">
             <form action="">
                 <label for="yes">Yes</label>
@@ -71,6 +72,7 @@
         </div>
         <div id="children-info">
             <!-- PUT IN TAG -> style="display: none;" -->
+             <h3>Enter Child's Information</h3>
             <input type="text" placeholder="Child's Name" id="child-name">
             <input type="date" placeholder="Child's Birth Date" id="child-birth-date">
             <form action="">
@@ -90,7 +92,7 @@
       </div>
       <div class="card" id="card6">
         <div class="progress">Step 4 of 5</div>
-            <h2>How Would You Like to Serve? 🙌</h2>
+            <h2>How Would You Like to Serve? 🙌🏾</h2>
             <p>Everyone has unique gifts. Let us know how you'd like to contribute.</p>
 
             <label><input type="checkbox" name="skills" value="Music"> Music Ministry</label><br>
@@ -103,8 +105,12 @@
             <br>
             <textarea placeholder="Other skills you'd like to share?"></textarea>
 
-            <button class="back" onclick="prevCard()">Back</button>
-            <button class="next" onclick="nextCard()">Next</button>
+            <button class="back">Back</button>
+            <button class="next">Finish</button>
+        </div>
+         <div class="card" id="card7">
+            <h2>Thank You! 🙏🏾</h2>
+            <p>Your information has been submitted. We look forward to connecting with you soon!</p>
         </div>
 </body>
 </html>
