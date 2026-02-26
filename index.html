@@ -16,7 +16,7 @@
     </div>
 
     <!-- Card 2: Name and Email -->
-    <div class="card" id="card2">
+    <div class="card" id="card2" style="display: none;"> 
         <h2>Basic Info</h2>
         <input type="text" placeholder="Enter Name" id="name">
         <input type="email" placeholder="Enter Email" id="email">
@@ -26,7 +26,7 @@
     </div>
 
     <!-- Address Card-->
-     <div class="card" id="card3">
+     <div class="card" id="card3" style="display: none;">
         <h2>Address Info 🏡</h2>
         <input type="text" placeholder="Address" id="address">
         <input type="text" placeholder="City" id="city">
@@ -41,14 +41,15 @@
      </div>
 
      <!-- Spouse Card -->
-      <div class="card" id="card4">
+      <div class="card" id="card4" style="display: none;">
         <h2>Are you married? 💍</h2>
         <div class="married-buttons">
+            <!-- Skips or prompts spouse info card -->
             <button class="yes" value="yes">Yes</button>
             <button class="no" value="no">No</button>
         </div>
 
-        <div id="spouse-info">
+        <div id="spouse-info"  >
             <!-- PUT IN TAG -> style="display: none;" -->
             <h3>Enter Spouse's Information</h3>
             <input type="text" placeholder="Spouse's Name" id="spouse-name">
@@ -60,22 +61,26 @@
             <button class="next">Next</button>
         </div>
       </div>
-      <div class="card" id="card5">
+      <div class="card" id="card5" style="display: none;">
         <h2>Do you have children? 🧒🏾</h2>
         <div class="radioBtns">
             <form action="">
                 <label for="yes">Yes</label>
+                <!-- Yes Button prompts the child info card -->
                 <input type="radio" id="yes" name="children" value="yes">
                 <label for="no">No</label>
+                <!-- No Button skips the child info card -->
                 <input type="radio" id="no" name="children" value="no">
             </form>
         </div>
         <div id="children-info">
             <!-- PUT IN TAG -> style="display: none;" -->
+            <!-- This will be the info card shown if member has kids -->
              <h3>Enter Child's Information</h3>
             <input type="text" placeholder="Child's Name" id="child-name">
             <input type="date" placeholder="Child's Birth Date" id="child-birth-date">
             <form action="">
+                <!-- Child info card -->
                 <label for="male">Male</label>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="female">Female</label>
@@ -84,14 +89,16 @@
                 <input type="date" id="dateBaptism">
                 <label for="dateCommunion">Date of Communion</label>
                 <input type="date" id="dateCommunion">
+                <!-- Button to add more kids  -->
                 <button id="addChild">Add Child</button>
             </form>
             <button class="back">Back</button>
             <button class="next">Next</button>
         </div>
       </div>
-      <div class="card" id="card6">
-        <div class="progress">Step 4 of 5</div>
+      <div class="card" id="card6" style="display: none;">
+        <div class="progress"></div>
+        <!-- Service Card -->
             <h2>How Would You Like to Serve? 🙌🏾</h2>
             <p>Everyone has unique gifts. Let us know how you'd like to contribute.</p>
 
@@ -108,7 +115,7 @@
             <button class="back">Back</button>
             <button class="next">Finish</button>
         </div>
-         <div class="card" id="card7">
+         <div class="card" id="card7" style="display: none;">
             <h2>Thank You! 🙏🏾</h2>
             <p>Your information has been submitted. We look forward to connecting with you soon!</p>
         </div>
