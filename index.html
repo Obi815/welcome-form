@@ -43,22 +43,68 @@
      <!-- Spouse Card -->
       <div class="card" id="card4">
         <h2>Are you married?</h2>
-        <div class="radio-buttons">
+        <div class="married-buttons">
             <button class="yes" value="yes">Yes</button>
             <button class="no" value="no">No</button>
         </div>
 
-        <div id="spouse-info" >
+        <div id="spouse-info">
             <!-- PUT IN TAG -> style="display: none;" -->
             <input type="text" placeholder="Spouse's Name" id="spouse-name">
             <input type="text" placeholder="Spouse's Phone Number" id="spouse-phone">
             <input type="email" placeholder="Spouse's Email" id="spouse-email">
             <input type="date" placeholder="Spouse's Birth Date" id="spouse-birth-date">
             <input type="date" placeholder="Wedding Anniversary" id="wedding-anniversary">
+            <button class="back">Back</button>
+            <button class="next">Next</button>
         </div>
       </div>
+      <div class="card" id="card5">
+        <h2>Do you have children?</h2>
+        <div class="radioBtns">
+            <form action="">
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="children" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="children" value="no">
+            </form>
+        </div>
+        <div id="children-info">
+            <!-- PUT IN TAG -> style="display: none;" -->
+            <input type="text" placeholder="Child's Name" id="child-name">
+            <input type="date" placeholder="Child's Birth Date" id="child-birth-date">
+            <form action="">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="dateBaptism">Date of Baptism</label>
+                <input type="date" id="dateBaptism">
+                <label for="dateCommunion">Date of Communion</label>
+                <input type="date" id="dateCommunion">
+                <button id="addChild">Add Child</button>
+            </form>
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card6">
+        <div class="progress">Step 4 of 5</div>
+            <h2>How Would You Like to Serve? 🙌</h2>
+            <p>Everyone has unique gifts. Let us know how you'd like to contribute.</p>
 
+            <label><input type="checkbox" name="skills" value="Music"> Music Ministry</label><br>
+            <label><input type="checkbox" name="skills" value="Teaching"> Teaching / Sunday School</label><br>
+            <label><input type="checkbox" name="skills" value="Hospitality"> Hospitality / Welcoming</label><br>
+            <label><input type="checkbox" name="skills" value="Tech"> Tech / Media</label><br>
+            <label><input type="checkbox" name="skills" value="Admin"> Administration</label><br>
+            <label><input type="checkbox" name="skills" value="Prayer"> Prayer Team</label><br>
 
-    
+            <br>
+            <textarea placeholder="Other skills you'd like to share?"></textarea>
+
+            <button class="back" onclick="prevCard()">Back</button>
+            <button class="next" onclick="nextCard()">Next</button>
+        </div>
 </body>
 </html>
